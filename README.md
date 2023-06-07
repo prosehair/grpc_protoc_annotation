@@ -10,18 +10,23 @@ that the generated code will depend on.
 ## Usage
 
 ```shell
-pip install grpc-gateway-protoc-gen-openapiv2
+pip install grpc-protoc-annotations
 ```
 
 ## Building
 
 1. Run `make init`
 2. Run `make build` to generate the code from grpc-gateway and build the package
-3. Run `pip install dist/grpc_gateway_protoc_gen_openapiv2-2.14.0-py3-none-any.whl` to install in the current Python
+3. Run `pip install dist/grpc_protoc_annotations-2.14.0-py3-none-any.whl` to install in the current Python
    distribution
 
 
 ## Publishing (optional)
 
 Setup PyPi credentials and
-1. `python3 -m pip install --user --upgrade twine && python3 -m twine upload --repository pypi dist/*`
+1. `make distribute`
+
+
+## Credits
+
+Original implementation from HackEdu, but Github repository is not available anymore and the Pypi package unmaintained.
