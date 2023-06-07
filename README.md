@@ -13,6 +13,13 @@ that the generated code will depend on.
 pip install grpc-protoc-annotations
 ```
 
+## Upgrade to new grpc-gateway release
+
+1. Run `./bump_version.sh 2.16.0` (replace 2.16.0 with the corresponding grpc-gateway release)
+2. Verify changes and commit
+3. Build and distribute
+
+
 ## Building
 
 1. Run `make init`
